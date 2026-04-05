@@ -102,6 +102,7 @@ const AddItem = () => {
     borderRadius: "6px",
     fontSize: "14px",
     outline: "none",
+    color: "#333",
     backgroundColor: "white",
   };
 

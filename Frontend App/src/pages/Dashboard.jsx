@@ -134,6 +134,7 @@ const Dashboard = () => {
     border: "1px solid #ddd",
     borderRadius: "6px",
     fontSize: "14px",
+    color: "#333",
     backgroundColor: "white",
     outline: "none",
     minWidth: "200px",

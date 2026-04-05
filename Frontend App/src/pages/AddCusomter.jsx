@@ -100,6 +100,7 @@ const AddCustomer = () => {
     borderRadius: "6px",
     fontSize: "14px",
     outline: "none",
+    color: "#333",
     backgroundColor: "white",
   };
 
@@ -115,6 +116,7 @@ const AddCustomer = () => {
     borderRadius: "6px",
     backgroundColor: "white",
     fontSize: "14px",
+    color: "#333",
     cursor: "pointer",
   };
 

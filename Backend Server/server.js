@@ -1,17 +1,16 @@
-const express = require('express');
-const cors = require('cors');
-require('dotenv').config();
+const express = require("express");
+const cors = require("cors");
+require("dotenv").config();
 
-const app = express(); //server created
+const app = express();
 
-app.use(cors());//allowing frontend to talk with backend
-app.use(express.json());//json data ->js object
+app.use(cors());
+app.use(express.json());
 
-app.use('/api/customers',require('./routes/customers.js'));
-app.use('/api/items',require('./routes/items.js'));
-app.use('/api/invoices',require('./routes/invoices.js'));
+app.use("/api/customers", require("./routes/customers"));
+app.use("/api/items", require("./routes/items"));
+app.use("/api/invoices", require("./routes/invoices"));
 
-const PORT =  process.env.PORT || 5000;
-app.listen(PORT,()=>{
-    console.log(`Server is running on port ${PORT}`);
-}
+app.listen(5000, () => {
+  console.log("Server is running on port 5000");
+});

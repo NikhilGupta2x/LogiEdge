@@ -2,37 +2,39 @@ const express = require("express");
 const router = express.Router();
 const pool = require("../db/db");
 
-// GET all items
+// GET all customers
 router.get("/", async (req, res) => {
   try {
-    const result = await pool.query("SELECT * FROM items");
+    const result = await pool.query("SELECT * FROM customers");
     res.json(result.rows);
   } catch (error) {
-    console.log("Items GET error:", error.message);
+    console.log("Customers GET error:", error.message);
     res.status(500).json({ message: "Something went wrong" });
   }
 });
 
-// POST create new item
+// POST create new customer
 router.post("/", async (req, res) => {
   try {
     const name = req.body.name;
-    const unit_price = req.body.unit_price;
+    const address = req.body.address;
+    const pan_number = req.body.pan_number;
+    const gstin = req.body.gstin;
     const status = req.body.status;
 
     const query = `
-      INSERT INTO items (name, unit_price, status)
-      VALUES ($1, $2, $3)
+      INSERT INTO customers (name, address, pan_number, gstin, status)
+      VALUES ($1, $2, $3, $4, $5)
       RETURNING *
     `;
 
-    const values = [name, unit_price, status];
+    const values = [name, address, pan_number, gstin, status];
     const result = await pool.query(query, values);
-    const newItem = result.rows[0];
+    const newCustomer = result.rows[0];
 
-    res.json(newItem);
+    res.json(newCustomer);
   } catch (error) {
-    console.log("Items POST error:", error.message);
+    console.log("Customers POST error:", error.message);
     res.status(500).json({ message: "Something went wrong" });
   }
 });

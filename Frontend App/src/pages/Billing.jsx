@@ -194,6 +194,7 @@ const Billing = () => {
     fontSize: "14px",
     backgroundColor: "white",
     outline: "none",
+    color:'#333',
   };
 
   const inputStyle = {
