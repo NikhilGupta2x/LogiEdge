@@ -9,11 +9,11 @@
 Run `database.sql` in pgAdmin to create all tables
 
 ### Backend
-cd "Backend Server"
-npm install
-npm run dev
+cd "Backend Server" 
+npm install 
+node server.js
 
 ### Frontend
-cd "Frontend App"
-npm install
-npm run dev
+#cd "Frontend App"
+#npm install
+#npm run dev
