@@ -1,7 +1,7 @@
 #LogiEdge Billing Dashboard
 
 ## Live DEMO
--Frontend: logiedge-app.vercel.app
+-Frontend: https://logiedge-app.vercel.app
 -Backend: https://logiedge.onrender.com
 
 ## How to run locally
