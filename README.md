@@ -14,6 +14,6 @@ npm install
 node server.js
 
 ### Frontend
-#cd "Frontend App"
-#npm install
-#npm run dev
+cd "Frontend App"
+npm install
+npm run dev
