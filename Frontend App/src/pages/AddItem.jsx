@@ -119,6 +119,7 @@ const AddItem = () => {
     backgroundColor: "white",
     fontSize: "14px",
     cursor: "pointer",
+    color: "#333",
   };
 
   const createButtonStyle = {
