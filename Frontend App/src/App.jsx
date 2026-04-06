@@ -1,3 +1,5 @@
+// Billing Dashboard
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import Master from "./pages/Masters";
