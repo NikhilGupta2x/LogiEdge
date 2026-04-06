@@ -1,10 +1,9 @@
-// Billing Dashboard
-
+// LogiEdge Billing Dashboard
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
-import Master from "./pages/Masters";
+import Master from "./pages/Master";
 import Customers from "./pages/Customers";
-import AddCustomer from "./pages/AddCusomter";
+import AddCustomer from "./pages/AddCustomer";
 import Items from "./pages/Items";
 import AddItem from "./pages/AddItem";
 import Billing from "./pages/Billing";
